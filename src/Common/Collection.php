@@ -19,9 +19,7 @@ class Collection implements \Iterator, \Countable
      */
     public function current()
     {
-        $item = current($this->collection);
-
-        return $item;
+        return current($this->collection);
     }
 
     /**
@@ -31,9 +29,7 @@ class Collection implements \Iterator, \Countable
      */
     public function key()
     {
-        $key = key($this->collection);
-
-        return $key;
+        return key($this->collection);
     }
 
     /**
@@ -63,11 +59,7 @@ class Collection implements \Iterator, \Countable
     {
         $key = key($this->collection);
 
-        if ($key !== null && $key !== false) {
-            return true;
-        } else {
-            return false;
-        }
+        return $key !== null && $key !== false;
     }
 
     /**
@@ -77,8 +69,6 @@ class Collection implements \Iterator, \Countable
      */
     public function count(): int
     {
-        $count = count($this->collection);
-
-        return $count;
+        return count($this->collection);
     }
 }
