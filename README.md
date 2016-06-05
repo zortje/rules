@@ -17,7 +17,7 @@ The recommended way to install Rules is through [Composer](https://getcomposer.o
 ```JSON
 {
     "require": {
-        "zortje/rules": "~0.0"
+        "zortje/rules": "~1.0"
     }
 }
 ```
