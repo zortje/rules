@@ -30,18 +30,18 @@ class RuleCollection extends Collection
     /**
      * Check all rules in collection
      *
-     * @param Subject $ruleSubject
+     * @param Subject $subject
      *
      * @return ResultCollection
      */
-    public function check(Subject $ruleSubject): ResultCollection
+    public function check(Subject $subject): ResultCollection
     {
-        $ruleResultCollection = new ResultCollection();
+        $resultCollection = new ResultCollection();
 
         foreach ($this->collection as $rule) {
-            $ruleResultCollection->merge($rule->check($ruleSubject));
+            $resultCollection->merge($rule->check($subject));
         }
 
-        return $ruleResultCollection;
+        return $resultCollection;
     }
 }

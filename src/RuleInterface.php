@@ -13,9 +13,9 @@ interface RuleInterface
     /**
      * Check rule and returns result collection
      *
-     * @param Subject $ruleSubject
+     * @param Subject $subject
      *
      * @return ResultCollection
      */
-    public function check(Subject $ruleSubject): ResultCollection;
+    public function check(Subject $subject): ResultCollection;
 }

@@ -20,22 +20,22 @@ class ResultCollection extends Collection
     /**
      * Add RuleResult to collection
      *
-     * @param Result $ruleResult
+     * @param Result $result
      */
-    public function add(Result $ruleResult)
+    public function add(Result $result)
     {
-        $this->collection[] = $ruleResult;
+        $this->collection[] = $result;
     }
 
     /**
      * Merge into this collection
      *
-     * @param ResultCollection $ruleResultCollection
+     * @param ResultCollection $resultCollection
      */
-    public function merge(ResultCollection $ruleResultCollection)
+    public function merge(ResultCollection $resultCollection)
     {
-        foreach ($ruleResultCollection as $ruleResult) {
-            $this->add($ruleResult);
+        foreach ($resultCollection as $result) {
+            $this->add($result);
         }
     }
 }
